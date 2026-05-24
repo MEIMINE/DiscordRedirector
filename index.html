@@ -6,41 +6,74 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
-    <!-- SEO Meta Tags -->
+    <!-- Configuration Variables -->
+    <script>
+        const config = {
+            serverName: "Discord Server",
+            pageTitle: "Discord Server - Jetzt beitreten!",
+            description: "Tritt unserem Discord Server bei! Eine vibrant Community mit interessanten Kanälen, Events und freundlichen Mitgliedern.",
+            keywords: "Discord Server, Community, Gaming, Chat, beitreten",
+            inviteLink: "https://discord.gg/DEININVITELINK",
+            imageUrl: "images/image.png",
+            imageWidth: 1920,
+            imageHeight: 1080,
+            language: "de"
+        };
+        
+        // Dynamically set meta tags
+        document.addEventListener('DOMContentLoaded', function() {
+            document.title = config.pageTitle;
+            document.querySelector('meta[name="description"]').content = config.description;
+            document.querySelector('meta[name="keywords"]').content = config.keywords;
+            document.querySelector('meta[property="og:title"]').content = config.pageTitle;
+            document.querySelector('meta[property="og:description"]').content = config.description;
+            document.querySelector('meta[property="og:url"]').content = config.inviteLink;
+            document.querySelector('meta[property="og:image"]').content = config.imageUrl;
+            document.querySelector('meta[property="og:site_name"]').content = config.serverName;
+            document.querySelector('meta[name="twitter:title"]').content = config.pageTitle;
+            document.querySelector('meta[name="twitter:description"]').content = config.description;
+            document.querySelector('meta[name="twitter:image"]').content = config.imageUrl;
+            document.querySelector('link[rel="canonical"]').href = config.inviteLink;
+            document.querySelector('meta[http-equiv="refresh"]').content = `1; url=${config.inviteLink}`;
+            document.querySelector('a').href = config.inviteLink;
+        });
+    </script>
+    
+    <!-- SEO Meta Tags (populated by config) -->
     <title>Discord Server - Jetzt beitreten!</title>
-    <meta name="description" content="Tritt unserem Discord Server bei! Eine vibrant Community mit interessanten Kanälen, Events und freundlichen Mitgliedern. Klicke hier, um direkt beizutreten.">
-    <meta name="keywords" content="Discord Server, Community, Gaming, Chat, beitreten">
+    <meta name="description" content="">
+    <meta name="keywords" content="">
     <meta name="author" content="Discord Server">
     <meta name="robots" content="index, follow">
     <meta name="language" content="German">
     <meta http-equiv="content-language" content="de">
     
-    <!-- Open Graph Meta Tags for Social Media -->
-    <meta property="og:title" content="Discord Server - Jetzt beitreten!">
-    <meta property="og:description" content="Tritt unserem Discord Server bei! Eine vibrant Community mit interessanten Kanälen, Events und freundlichen Mitgliedern.">
+    <!-- Open Graph Meta Tags for Social Media (populated by config) -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content="">
     <meta property="og:type" content="website">
-    <meta property="og:url" content="https://discord.gg/DEININVITELINK">
-    <meta property="og:image" content="images/image.png">
+    <meta property="og:url" content="">
+    <meta property="og:image" content="">
     <meta property="og:image:type" content="image/png">
     <meta property="og:image:width" content="1920">
     <meta property="og:image:height" content="1080">
-    <meta property="og:site_name" content="Discord Server">
+    <meta property="og:site_name" content="">
     
-    <!-- Twitter Card Meta Tags -->
+    <!-- Twitter Card Meta Tags (populated by config) -->
     <meta name="twitter:card" content="summary_large_image">
-    <meta name="twitter:title" content="Discord Server - Jetzt beitreten!">
-    <meta name="twitter:description" content="Tritt unserem Discord Server bei! Eine vibrant Community mit interessanten Kanälen, Events und freundlichen Mitgliedern.">
-    <meta name="twitter:image" content="images/image.png">
+    <meta name="twitter:title" content="">
+    <meta name="twitter:description" content="">
+    <meta name="twitter:image" content="">
     
-    <!-- Canonical Tag -->
-    <link rel="canonical" href="https://discord.gg/DEININVITELINK">
+    <!-- Canonical Tag (populated by config) -->
+    <link rel="canonical" href="">
     
     <!-- Favicon -->
     <link rel="icon" href="assets/favicon.ico" type="image/x-icon">
     <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
     
-    <!-- Redirect after 1 second -->
-    <meta http-equiv="refresh" content="1; url=https://discord.gg/DEININVITELINK">
+    <!-- Redirect after 1 second (populated by config) -->
+    <meta http-equiv="refresh" content="1; url="">
     
     <style>
         body {
@@ -93,7 +126,7 @@
     <div class="container">
         <h1>Willkommen auf unserem Discord Server!</h1>
         <p>Du wirst in Kürze zum Discord Server weitergeleitet...</p>
-        <p>Falls die Weiterleitung nicht funktioniert, <a href="https://discord.gg/DEININVITELINK">klicke hier um beizutreten</a>.</p>
+        <p>Falls die Weiterleitung nicht funktioniert, <a href="">klicke hier um beizutreten</a>.</p>
     </div>
 </body>
 
